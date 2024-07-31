@@ -14,8 +14,6 @@ Node *create_node(const char *key, const int value) {
   node->children = NULL;
   node->children_count = 0;
   node->has_value = false;
-  // node->key = (char *)calloc(1, strlen(key));
-  // strcpy(node->key, key);
   node->key = strdup(key);
   node->value = value;
 
